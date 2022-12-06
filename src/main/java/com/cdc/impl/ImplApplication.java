@@ -44,28 +44,6 @@ public class ImplApplication {
 
 		bookmarkDemoRepository.save(bookmark_demo);
 	}
-//	@KafkaListener(topics = "member", groupId = "comfy")
-//	public void memberConsume(String message) throws IOException, ParseException {
-//		//2. Parser
-//
-//		//3. To Object
-//		Object obj = jsonParser.parse(message);
-//
-//		//4. To JsonObject
-//		JSONObject jsonObj = (JSONObject) obj;
-//
-//		String queryCase=jsonObj.get("op").toString();
-//		if(queryCase.equals("c")){ // insert
-//
-//		}
-//		else if(queryCase.equals("u")){ // update
-//
-//		}
-//		else if(queryCase.equals("d")){ // delete
-//
-//		}
-//		System.out.println(String.format("Consumed message : %s", jsonObj.get("payload")));
-//	}
 	public static void main(String[] args) {
 		SpringApplication.run(ImplApplication.class, args);
 	}

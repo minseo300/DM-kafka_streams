@@ -16,7 +16,6 @@ spring:
     password: root
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://sink-postgres:5432/postgres?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    #    url: jdbc:mysql://source-member-svc/member?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     jpa:
       hibernate:
         ddl-auto: create # When you launch the application for the first time - switch "none" at "create"
